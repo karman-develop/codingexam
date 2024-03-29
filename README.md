@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### 試験内容
+
+1. RESAS(地域経済分析システム) API の「都道府県一覧」API から取得する
+2. API レスポンスから都道府県一覧のチェックボックスを動的に生成する
+3. 都道府県にチェックを入れると、RESAS API から選択された都道府県の「人口構成」を取得する
+4. 人口構成 API レスポンスから、X 軸:年、Y 軸:人口数の折れ線グラフを動的に生成して表示する
+5. 「総人口」の他に「年少人口」「生産年齢人口」「老年人口」も切り替える UI を何らかの形で用意し表示できるようにする
