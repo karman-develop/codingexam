@@ -5,17 +5,22 @@ import { Title } from "./components/Title";
 import { List } from "./components/List";
 import { Tab } from "./components/Tab";
 import { Chart } from "./components/Chart";
+import { Loading } from "./components/Loading";
 
 function App() {
   const [items, setItems] = useState([]);
   const [data, setData] = useState([]);
   const [name, setName] = useState("北海道");
   const [code, setCode] = useState(1);
+  const [load, setLoad] = useState(true);
 
   useEffect(() => {
     const obj = async () => {
       const result = await getPref();
       setItems(result.result);
+      setTimeout(() => {
+        setLoad(false);
+      }, 2 * 1000);
     };
     obj();
   }, []);
@@ -48,29 +53,37 @@ function App() {
     }
   };
 
-  return (
-    <>
-      <div className="container">
-        <Title />
+  if (load) {
+    return (
+      <>
+        <Loading />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div className="container">
+          <Title />
 
-        <div className="row row-cols-6 mb-2">
-          {items.map((item, index) => (
-            <List
-              key={index}
-              item={item}
-              index={index}
-              name={name}
-              onChange={handleChange}
-            />
-          ))}
+          <div className="row row-cols-6 mb-2">
+            {items.map((item, index) => (
+              <List
+                key={index}
+                item={item}
+                index={index}
+                name={name}
+                onChange={handleChange}
+              />
+            ))}
+          </div>
+
+          <Tab handleFilter={handleFilter} />
+
+          <Chart data={data} />
         </div>
-
-        <Tab handleFilter={handleFilter} />
-
-        <Chart data={data} />
-      </div>
-    </>
-  );
+      </>
+    );
+  }
 }
 
 export default App;
