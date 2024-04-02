@@ -7,6 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+
 export const Chart = ({ data }) => {
   return (
     <div className="mb-4">
@@ -22,7 +23,7 @@ export const Chart = ({ data }) => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis />
+          <YAxis fontSize={11} />
           <Tooltip />
           <Area
             type="monotone"
