@@ -4,7 +4,8 @@ export const getPref = async () => {
     {
       method: "GET",
       headers: {
-        "X-API-KEY": process.env.REACT_APP_API_KEY,
+        // "X-API-KEY": process.env.REACT_APP_API_KEY,
+        "X-API-KEY": "KcBPtJxsQw1mARS6Xl2xyE9e7ailxUvd2dWUrbDb",
       },
     }
   );
