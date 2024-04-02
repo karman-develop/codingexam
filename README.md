@@ -1,74 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
 ### 試験内容
 
 1. RESAS(地域経済分析システム) API の「都道府県一覧」API から取得する
@@ -76,3 +5,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 3. 都道府県にチェックを入れると、RESAS API から選択された都道府県の「人口構成」を取得する
 4. 人口構成 API レスポンスから、X 軸:年、Y 軸:人口数の折れ線グラフを動的に生成して表示する
 5. 「総人口」の他に「年少人口」「生産年齢人口」「老年人口」も切り替える UI を何らかの形で用意し表示できるようにする
+
+### 誓約と制約
+
+1. React/Vue.js のいずれかを用いて SPA を構築する → :o: React
+2. RESAS API のデータを使用する → :o:
+3. グラフは Highcharts や Rechart.js などのサードパーティ製のグラフライブラリを使用する → :o: Rechartjs
+4. Google Chrome 最新版で正しく動作する → :o:
+5. PC/スマートフォン表示に対応すること → :x: iPad 位まで
+6. リンターやフォーマッターを適切に設定すること → :o: vscode に設定した
+7. リンターには ESLint、フォーマッターには Prettier を使用すること → :o:
+8. style は自分で記述し、UI フレームワークなどは原則使用しないこと → :x: 時間の都合で…(;'∀')
+9. TypeScript で記述すること → :x: 今からやる
+10. テストケース/テストコードを作成する → :o: testing-library
+11. テスト実行時にエラーが発生しないこと → :o:
+12. ソースコードは Git で管理し、作成したソースコードは GitHub にアップロードすること → :small_red_triangle: 開発用ブランチ作成してない
+13. Vercel 等のホスティングサービスにデプロイし、URL を提出する → :o:
+
+### 環境
+
+1. Windows
+2. NVM for Windows
+3. Node.js 16 or 18 or 20
+4. React
+5. JavaScript
