@@ -26,6 +26,6 @@
 
 1. Windows
 2. NVM for Windows
-3. Node.js 16 or 18 or 20
+3. Node.js 20
 4. React
 5. JavaScript
